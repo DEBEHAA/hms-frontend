@@ -1,0 +1,39 @@
+.blog-content p {
+  @apply mb-4 text-[15px] text-gray-600 sm:text-base;
+}
+
+.blog-content :is(h1, h2, h3, h4, h5, h6) {
+  @apply mb-1.5 font-semibold text-gray-800;
+}
+
+.blog-content h1 {
+  @apply text-2xl md:text-3xl lg:text-4xl;
+}
+
+.blog-content h2 {
+  @apply text-[22px] md:text-2xl lg:text-3xl;
+}
+
+.blog-content h3 {
+  @apply text-xl md:text-[22px] lg:text-2xl;
+}
+
+.blog-content ul {
+  @apply list-inside list-disc space-y-2.5;
+}
+
+.blog-content ol {
+  @apply list-inside list-decimal space-y-2.5;
+}
+
+.blog-content li {
+  @apply text-[15px] text-gray-600 sm:text-base;
+}
+
+.blog-content strong {
+  @apply font-semibold text-gray-700;
+}
+
+.blog-content a {
+  @apply text-[15px] text-blue hover:underline sm:text-base;
+}

@@ -24,7 +24,7 @@ const Navbar = () => {
     <header className="bg-white py-4 md:py-5">
       <div className="container flex items-center justify-between">
         <Link to="/">
-          <img className="h-8 md:h-9" src="/logo1.png" alt="HMS" />
+          {/* <img className="h-8 md:h-9" src="/logo1.png" alt="HMS" /> */}
         </Link>
         <DesktopNavItems items={navItems} user={user} isLoading={isLoading} />
         <MobileNavItems

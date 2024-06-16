@@ -76,6 +76,7 @@ const PatientAppointments = () => {
           <div className="mb-5 flex items-center justify-between">
             <h2 className="text-2xl font-bold">Appointment List</h2>
           </div>
+          
           <div>
             <DashDataTable
               columns={columns}

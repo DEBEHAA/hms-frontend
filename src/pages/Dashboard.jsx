@@ -3,6 +3,7 @@ import DashboardSkeleton from "@/components/Dashboard/shared/DashboardSkeleton";
 import useAuth from "@/hooks/useAuth";
 import { useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
+import Navbar from "@/components/shared/Navbar";
 
 const Dashboard = ({ allowedRoles }) => {
   const { isLoading, user } = useAuth();
@@ -23,6 +24,7 @@ const Dashboard = ({ allowedRoles }) => {
           sidebarOpen={sidebarOpen}
           setSidebarOpen={setSidebarOpen}
         />
+        <Navbar />
         <div className="h-full w-full overflow-hidden">
           <Outlet context={[sidebarOpen, setSidebarOpen]} />
         </div>
